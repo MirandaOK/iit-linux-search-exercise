@@ -24,7 +24,7 @@ Example: wc command is to count data in a given file. -l parameter is for counti
 ### 2. How many different ages are in fullnames_with_age.txt?
 
 ![task 2](task2.png)
-**Explanation:** first ***cut*** - cuts out everything except age=?, second ***cut*** - cuts out the 'age =' leaving only the numbers, ***sort*** - sorts them as it's required for uniq, ***uniq - c*** - counts unique occurences, ***wc -l*** - counts the lines (so how many different numbers there are)
+**Explanation:** first ***cut*** - cuts out everything except age=_  (leaving only text after the second space), second ***cut*** - cuts out the 'age =' leaving only the numbers, ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences, ***wc -l*** - counts the lines (so how many different numbers there are)
 
 ---
 
@@ -32,7 +32,7 @@ Example: wc command is to count data in a given file. -l parameter is for counti
 
 ![task 3](task3.png)
 
-**Explanation:** ***cut*** - cuts out everything except first names, ***sort*** - sorts them as it's required for uniq, ***uniq - c*** - counts unique occurences, ***wc -l*** - counts the lines (so how many unique names there are)
+**Explanation:** ***cut*** - cuts out everything except first names, ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences, ***wc -l*** - counts the lines (so how many unique names there are)
 
 ---
 
@@ -40,7 +40,7 @@ Example: wc command is to count data in a given file. -l parameter is for counti
 
 ![task 4](task4.png)
 
-**Explanation:** first ***cut*** - cuts out everything except age=?, second ***cut*** - cuts out the 'age =' leaving only the numbers, ***sort*** - sorts them as it's required for uniq, ***uniq - c*** - counts unique occurences (it shows how many there are of a certain number and then displays the number next to it), ***sort -nr*** - sorts them reversed (from biggest to smallest - so from the most often appering to the least), ***head -1*** - shows only the first one (the most often appearing)
+**Explanation:** first ***cut*** - cuts out everything except age=_, second ***cut*** - cuts out the 'age =' leaving only the numbers, ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences (it shows how many there are of a certain number and then displays the number next to it), ***sort -nr*** - sorts them reversed (from biggest to smallest - so from the most often appering to the least), ***head -1*** - shows only the first one (the most often appearing)
 
 ---
 
@@ -48,7 +48,7 @@ Example: wc command is to count data in a given file. -l parameter is for counti
 
 ![task 5](task5.png)
 
-**Explanation:** ***grep*** - leaves only lines that have FAIL in them, ***cut*** - cuts out everything except username,  ***sort*** - sorts them as it's required for uniq, ***uniq - c*** - counts unique occurences (counts how many each user had failed login attempts), ***sort -nr*** - sorts them reversed (from biggest to smallest - so from the most failed logins to the least), ***head -1*** - shows only the first one (the user with the most failed logins and how many were there)
+**Explanation:** ***grep*** - leaves only lines that have FAIL in them, ***cut*** - cuts out everything except username,  ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences (counts how many each user had failed login attempts), ***sort -nr*** - sorts them reversed (from biggest to smallest - so from the most failed logins to the least), ***head -1*** - shows only the first one (the user with the most failed logins and how many were there)
 
 ---
 
@@ -61,27 +61,24 @@ Example: wc command is to count data in a given file. -l parameter is for counti
 
 ### 7, Which level (INFO, WARN, ERROR) appears most often in system_small.log?
 
-Put screenshot from Codespaces illustrating the result here.
-Correct screenshot should contain your github username in the shell, a command and the result.
+![task 7](task7.png)
 
-**Explanation** Write the explanation why the specific command was used.
+**Explanation:** the first two ***cut*** - cuts out everything except level, ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences, ***sort -nr*** - sorts them reversed (from biggest to smallest - so from the most often appering to the least), ***head -1*** - shows only the first one (the most often appearing and how many times it does)
 
 ---
 
 ### 8. What is the top 3 most common actions in app_small.log?
 
-Put screenshot from Codespaces illustrating the result here.
-Correct screenshot should contain your github username in the shell, a command and the result.
+![task 8](task8.png)
 
-**Explanation** Write the explanation why the specific command was used.
+**Explanation:** the first two ***cut*** - cuts out everything except action, ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences, ***sort -nr*** - sorts them reversed (from most common to least), ***head -3*** - shows the top 3
 
 ---
 
 ### 9. How many unique users are in app_small.log?
 
-Put screenshot from Codespaces illustrating the result here.
-Correct screenshot should contain your github username in the shell, a command and the result.
+![task 9](task9.png)
 
-**Explanation** Write the explanation why the specific command was used.
+**Explanation:** the first two ***cut*** - cuts out everything except user, ***sort*** - sorts them as it's required for uniq, ***uniq -c*** - counts unique occurences (and shows them in seperate lines), ***wc -l*** - counts the lines (so how many users there are)
 
 ---
